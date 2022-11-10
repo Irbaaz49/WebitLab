@@ -1,24 +1,41 @@
-import logo from './logo.svg';
+import React from 'react';
+import Header from './Components/Header';
 import './App.css';
+import Section1 from './Components/Section1';
+import Section2 from './Components/Section2';
+import { section2const , sectionConst} from './Components/Constant/section2img';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+  
+
+    <div className='LandingPage'>  
+      <Header />
+      <Section1 />
     </div>
+    <Section2 
+      h1="MEASUREMENT"
+      h12="TO OUR SUCSESS"
+      subheading="our process driven approach keep us going"
+      mapingVar={section2const}
+      headingColor='#00FF00'
+      smallHeading='#FFFFFF'
+      contentColor='white'
+      bgColor='black'
+    />
+       <Section2 
+      h1="WE ARE WORKING"
+      h12="WITH THESE INDUSTRIES"
+      mapingVar={sectionConst}
+      headingColor='#09090A'
+      smallHeading='#FFFFFF'
+      contentColor='black'
+      bgColor='#EDEDED'
+    />
+    </>
+ 
+    
   );
 }
 

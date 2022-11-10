@@ -1,0 +1,44 @@
+.section1{
+    position: relative;
+    height: 80vh;
+}
+
+.mainContent{
+    top: 241px;
+    left: 140px;
+    width: 100%;
+    height:90vh;
+    background: transparent url('/public/img/Group\ 82.svg') 0% 0% no-repeat padding-box;
+    background-size: 70% 90%;
+    opacity: 1;
+}
+.heading{
+    width: 45%;
+    position: relative;
+    top: 100px;
+    left: 300px;
+    font-size: 30px;
+}
+.subHeading{
+    width: 45%;
+    position: relative;
+    top: 100px;
+    left: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+    .heading {
+        width: 45%;
+        position: relative;
+        top: 56px;
+        left: 193px;
+        font-size: 11px;
+    }
+    .subHeading {
+        width: 45%;
+        position: relative;
+        top: 42px;
+        left: 197px;
+        font-size: 9px;
+    }
+}
